@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.8.5 on linux)" generated="20210414 15:53:15.723" rpa="false" schemaversion="2">
+<suite id="s1" name="Curriculum" source="/home/user/projetos/DemoPubDev/Cases/curriculum.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210414 15:53:15.834" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210414 15:53:15.834" endtime="20210414 15:53:17.322"/>
+</kw>
+<test id="s1-t1" name="Test">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20210414 15:53:17.324" level="INFO">Opening url 'https://www.primecontrol.com.br/trabalhe-conosco/'</msg>
+<status status="PASS" starttime="20210414 15:53:17.324" endtime="20210414 15:53:19.956"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:hs-eu-confirmation-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:19.957" level="INFO">Clicking element 'id:hs-eu-confirmation-button'.</msg>
+<status status="PASS" starttime="20210414 15:53:19.957" endtime="20210414 15:53:20.002"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${trabalheConosco.btnCadastraCurriculo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:20.003" level="INFO">Clicking element '//a[text()='CADASTRE SEU CURRÍCULO']'.</msg>
+<status status="PASS" starttime="20210414 15:53:20.002" endtime="20210414 15:53:20.049"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210414 15:53:20.050" endtime="20210414 15:53:20.058"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.name}</arg>
+<arg>Teste</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:20.059" level="INFO">Typing text 'Teste' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20210414 15:53:20.058" endtime="20210414 15:53:22.004"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.cargo}</arg>
+<arg>QA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.005" level="INFO">Typing text 'QA' into text field 'id:headline'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.004" endtime="20210414 15:53:22.080"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.salario}</arg>
+<arg>100000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.080" level="INFO">Typing text '100000' into text field 'id:salary'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.080" endtime="20210414 15:53:22.158"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.email}</arg>
+<arg>teste@mailinator.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.159" level="INFO">Typing text 'teste@mailinator.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.158" endtime="20210414 15:53:22.253"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.telefone}</arg>
+<arg>4199999999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.255" level="INFO">Typing text '4199999999' into text field 'id:phone-0'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.254" endtime="20210414 15:53:22.333"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${trabalheConosco.cmbPais}</arg>
+<arg>BR</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210414 15:53:22.334" level="INFO">Selecting options from selection list 'id:country' by value BR.</msg>
+<status status="PASS" starttime="20210414 15:53:22.334" endtime="20210414 15:53:22.403"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.estado}</arg>
+<arg>PR</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.404" level="INFO">Typing text 'PR' into text field 'id:region'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.403" endtime="20210414 15:53:22.484"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.cidade}</arg>
+<arg>Curitiba</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.485" level="INFO">Typing text 'Curitiba' into text field 'id:city'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.484" endtime="20210414 15:53:22.567"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.bairro}</arg>
+<arg>Localiza aí BB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.568" level="INFO">Typing text 'Localiza aí BB' into text field 'id:neighborhood'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.567" endtime="20210414 15:53:22.662"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.endereco}</arg>
+<arg>Rua da QA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.663" level="INFO">Typing text 'Rua da QA' into text field 'id:address'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.663" endtime="20210414 15:53:22.743"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.cep}</arg>
+<arg>99999-999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.744" level="INFO">Typing text '99999-999' into text field 'id:zipcode'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.743" endtime="20210414 15:53:22.821"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${trabalheConosco.resumo}</arg>
+<arg>Currículo enviado com ROBOT FRAMEWORK</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.822" level="INFO">Typing text 'Currículo enviado com ROBOT FRAMEWORK' into text field 'id:summary'.</msg>
+<status status="PASS" starttime="20210414 15:53:22.821" endtime="20210414 15:53:22.916"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>${trabalheConosco.curriculo}</arg>
+<arg>${EXECDIR}/miojo.doc</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20210414 15:53:22.917" level="INFO">Sending /home/user/projetos/DemoPubDev/miojo.doc to browser.</msg>
+<status status="PASS" starttime="20210414 15:53:22.916" endtime="20210414 15:53:22.951"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>miojo.doc</arg>
+<arg>30</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210414 15:53:22.952" endtime="20210414 15:53:23.416"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${trabalheConosco.btnFinalizar}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20210414 15:53:23.417" endtime="20210414 15:53:23.725"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${trabalheConosco.btnFinalizar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210414 15:53:23.729" level="INFO">Clicking element '//*[@type='submit']'.</msg>
+<status status="PASS" starttime="20210414 15:53:23.726" endtime="20210414 15:53:23.825"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>com sucesso</arg>
+<arg>30</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210414 15:53:23.825" endtime="20210414 15:53:24.319"/>
+</kw>
+<status status="PASS" starttime="20210414 15:53:17.322" endtime="20210414 15:53:24.320"/>
+</test>
+<status status="PASS" starttime="20210414 15:53:15.724" endtime="20210414 15:53:24.320"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Curriculum">Curriculum</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
